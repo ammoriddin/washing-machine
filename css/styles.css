@@ -1,0 +1,187 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap);
+
+
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ec707a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 840px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.washing-mode-info {
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.432);
+}
+
+.washing-mode-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.washing-mode-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.washing-mode-link {
+  font-size: 59px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.washing-mode-item-active a{
+  color: #fff;
+}
+
+.washing-mode-notice {
+  max-width: 520px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.washing-mode-controller {
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  padding: 0;
+  background-color: rgb(250, 211, 211);
+  opacity: .7;
+  cursor: pointer;
+}
+
+.washing-mode-controller-prev {
+  left: -80px;
+}  
+
+.washing-mode-controller-next {
+  right: -80px;
+}  
+
+.washing-mode-controller-next img {
+  transform: rotate(180deg);
+}
+
+.washing-mode-controller:hover {
+  opacity: 1;
+}
+
+.washing-mode-status {
+  display: flex;
+  margin: 0;
+}
+
+.washing-mode-status-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 260px;
+  padding: 42px;
+}
+
+.washing-mode-status-item-timer {
+  background-color: #3e3c3d
+}
+
+.washing-mode-status-item-temp {
+  background-color: #353333;
+}
+
+.washing-mode-status-item-load {
+  background-color: #201e1e;
+}
+
+
+.washing-mode-status-heading {
+  color: #ec707a;
+}
+
+.washing-mode-status-value {
+  margin-left: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.start-button {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 180px;
+  padding: 17px 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #111;
+  color: #fff;
+  text-transform: uppercase;
+  transform: translateY(50%);
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  transform: translateY(30%);
+}

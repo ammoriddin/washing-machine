@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="main-content">
+    <div class="container">
+      <h1 class="visually-hidden">Washing machine interfac</h1>
+      <ul class="washing-mode-list">
+        <li class="washing-mode-item washing-mode-item-active">
+          <a class="washing-mode-link" href="#">Synthtic</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="#">Wool</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="#">Denim</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="#">Silk</a>
+        </li>
+        <li class="washing-mode-item">
+          <a class="washing-mode-link" href="#">Linen</a>
+        </li>
+      </ul>
+
+      <p class="washing-mode-notice">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti architecto rem ex iure voluptates, corporis perspiciatis 
+      </p>
+
+      <div class="washing-mode-info">
+        <button class="washing-mode-controller washing-mode-controller-prev" type="button">
+          <img src="./img/arrow-lift-icon.svg" alt="<" width="24" height="24">
+        </button>
+        <button class="washing-mode-controller washing-mode-controller-next" type="button">
+          <img src="./img/arrow-lift-icon.svg" alt=">" width="24" height="24">
+        </button>
+
+        <button class="start-button" type="button">Start</button>
+
+        <dl class="washing-mode-status">
+          <div class="washing-mode-status-item washing-mode-status-item-timer">
+            <dt class="washing-mode-status-heading">Timer</dt>
+            <dd class="washing-mode-status-value">45 min</dd>
+          </div>
+          <div class="washing-mode-status-item washing-mode-status-item-temp">
+            <dt class="washing-mode-status-heading">Temprature</dt>
+            <dd class="washing-mode-status-value">Cold</dd>
+          </div>
+          <div class="washing-mode-status-item washing-mode-status-item-load">
+            <dt class="washing-mode-status-heading">Load</dt>
+            <dd class="washing-mode-status-value">Midium</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
